@@ -12,11 +12,20 @@ export default function Education() {
            <details class="px-6 py-4">
           <summary class="font-bold text-2xl text-gray-800">
             Starz  University - 2022
-          </summary>
+            </summary>
           <p>
            I am student at Starz University doing programming
            </p>
+         
         </details>
+        <details class="px-6 py-4">
+          <summary class="font-bold text-2xl text-gray-800">
+            University of Liberia
+            </summary>
+            <p>
+            Still a student at University of Liberia reading Economics and Demography
+           </p>
+            </details>
            </>
     )
 }
