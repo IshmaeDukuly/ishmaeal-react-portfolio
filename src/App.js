@@ -1,38 +1,37 @@
-import logo from './logo.svg';
+
+import React from 'react';
 import './App.css';
-import Navbar from './components/Navbar';
-import AuthorCard from './components/AuthorCard';
-import Work from './components/Work';
+import MainNavBar from './components/MainNavBar';
+import PersonalDetails from './components/PersonalDetails';
+import Work from './components/Work'
 import Education from './components/Education';
 import Hobbies from './components/Hobbies';
+import { useState } from 'react';
 
-function App() {
+export default function App() {
+
+  const [isActive, setIsActive] = useState({
+    active: true,
+    name: "education"
+  })
+
   return (
-  <>
-    <Navbar />
+    <>
+    {/* insert the main navbar component /}
+    <MainNavBar />
 
-      <div class="py-6">
-        <main>
-          <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-            {/* <!-- Replace with your content --> */}
+    {/ insert the personal details component */}
+    <PersonalDetails isActive={isActive} setIsActive={setIsActive}/>
 
-            {/* <!-- Work --> */}
-            <AuthorCard />
+    {
+      isActive.active && isActive.name === "education" ? (<Education /> ): isActive.active && isActive.name === "work" ? (<Work /> ) : (<Hobbies />)
+    }
 
-            {/* <!-- Work --> */}
-           <Work / >
-            
-            {/* <!-- Education --> */}
-            <Education />
-            {/* <!-- Hobbies --> */}
-           <Hobbies />
-           </div>
-          {/* <!-- /End replace --> */}
-      
-      </main>
-    </div>
-    </> 
-  );
+
+
+
+    </>
+  )
 }
 
-export default App;
+// export default App;
