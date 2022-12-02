@@ -1,12 +1,12 @@
 
 import React from 'react';
 import './App.css';
-import MainNavBar from './components/MainNavBar';
-import PersonalDetails from './components/PersonalDetails';
+import Navbar from './components/Navbar';
 import Work from './components/Work'
 import Education from './components/Education';
 import Hobbies from './components/Hobbies';
 import { useState } from 'react';
+import AuthorCard from './components/AuthorCard';
 
 export default function App() {
 
@@ -17,11 +17,12 @@ export default function App() {
 
   return (
     <>
-    {/* insert the main navbar component /}
-    <MainNavBar />
+    {/* {/* insert the main navbar component /} */}
+   
+   <Navbar />
 
-    {/ insert the personal details component */}
-    <PersonalDetails isActive={isActive} setIsActive={setIsActive}/>
+    {/* {/ insert the personal details component */} 
+    <AuthorCard isActive={isActive} setIsActive={setIsActive}/>
 
     {
       isActive.active && isActive.name === "education" ? (<Education /> ): isActive.active && isActive.name === "work" ? (<Work /> ) : (<Hobbies />)

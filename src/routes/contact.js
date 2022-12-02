@@ -1,10 +1,10 @@
 import React from 'react';
-import MainNavBar from '../components/MainNavBar';
+import Navbar from '../components/MainNavBar';
 import {Link} from "react-router-dom"
 export default function Contact() {
     return (
         <>
-        <MainNavBar />
+        <Navbar />
             <section class="bg-white py-20 lg:py-[120px] overflow-hidden relative z-10">
                 <div class="container">
                     <div class="flex flex-wrap lg:justify-between mx-5 px-3">

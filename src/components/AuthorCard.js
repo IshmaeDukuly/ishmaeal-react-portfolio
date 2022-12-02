@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 
 export default function AuthorCard() {
-  const [isActive, setIsACtive] = useState({
+  const [isActive, setIsActive] = useState({
     active: true,
     name: "education"
   })
