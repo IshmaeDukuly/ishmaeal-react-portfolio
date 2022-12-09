@@ -15,9 +15,9 @@ export default function AuthorCard() {
                 <h1 class="text-center text-gray-800 text-4xl capitalize font-medium">Ishmael Dukuly</h1>
                 <small class="text-center block text-md text-gray-800">Thinker, Educator &amp; Front-end Developer</small>
                 <p class="text-justify text-lg text-gray-800">
-                  
-                Hi! I am Ishmael Dukuly, a passionate person and an Tech Enthusiat. I love programming and I want to be a software Engineer. I am person who love to be around likke minded people most esppecially peoople who add can value to life.
-                  </p>
+                  Hi! I'm Ishmael Dukuly, a computer programmer. I love programming and I am currently  frond-end web developer. My goal is to become a software engineer and that's why I am always involve with programming. I have little skill in javaScript and React JS.
+                
+                 </p>
                   <div className="p-6 max-w-full mx-auto">
                     <ul className="flex justify-center items-center gap-4">
                       <li className={`border border-gray-500 rounded-lg p-2 ${isActive.active && isActive.name === "education" && 'bg-[#FF8F56]' }`}>
