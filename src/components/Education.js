@@ -14,7 +14,7 @@ export default function Education() {
             Starz  University - 2022
             </summary>
           <p>
-           I am student at Starz University doing programming
+           I am student at Starz University stuying Information Tecnology, with emphasis system administration. I am presently a third year student
            </p>
          
         </details>
