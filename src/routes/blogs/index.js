@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import MainNavBar from "../../components/MainNavBar";
+import Navbar from "../../components/Navbar";
 import { collection, doc, getDocs } from "firebase/firestore/lite";
 import { FireBaseDB } from "../../db/firebase";
 import PostAuthorCard from "../../components/PostAuthorCard";
@@ -29,7 +29,7 @@ export default function Blog() {
   }, []);
   return (
     <>
-      <MainNavBar />
+      <Navbar />
       <div class="relative bg-gray-50 px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28">
         <div class="absolute inset-0">
           <div class="h-1/3 bg-white sm:h-2/3"></div>

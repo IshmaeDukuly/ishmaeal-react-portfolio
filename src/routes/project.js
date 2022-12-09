@@ -1,5 +1,5 @@
 import React from 'react';
-import MainNavBar from '../components/MainNavBar';
+import Navbar from '../components/Navbar';
 import pic from "../components/images/Phonebook.png";
 import pic1 from "../components/images/portfolio.png";
 
@@ -7,7 +7,7 @@ import pic1 from "../components/images/portfolio.png";
 export default function Projects() {
     return (
         <>
-        <MainNavBar />
+        <Navbar />
         <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
     {/* <!--Card 1--> */}
     <div class="rounded overflow-hidden shadow-lg">
